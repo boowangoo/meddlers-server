@@ -1,0 +1,50 @@
+1	Board setup: 0
+2	Player determination: 0
+		- Order decided by RNG
+3	Piece setup (A): 1->N
+		- Add to each player:
+			- 5 settlement pieces
+			- 4 city pieces
+			- 15 road pieces
+		- Build settlement
+			- Must be 2 away from nearest city
+			- Must not be in between another player's road
+			- Add 1 victory point
+			- Receive adjacent resources
+		- Build road
+			- Must be connected to a settlement/road you own
+4	Piece setup (B): N->1
+		- Select settlement location
+			- Place settlement
+			- Receive adjacent resources
+		- Place road location
+			- Must be connected to 2nd placed settlement
+3	Regular Turn: 1->N
+		-Roll dice
+			- If 7:
+				- Move to new tile
+					- Must have other players' settlement(s) adjacent
+				- Select player who has adjacent
+			- Allocate associated resourced to players 1->N
+				- 1 for each adjacent city
+				- 2 for each adjacent road
+		-Do one of the following as many times as you want:
+			- Buy development card
+			- Play development card not received from your turn
+				- Monopoly
+				- Knight
+			- Build settlement
+				- Must be 2 away from nearest city
+				- Must not be in between another player's road
+				- Add 1 victory point
+			- Build road
+				- Must be connected to a settlement/road you own
+				- Check for longest road achievement
+					- Longest road must be 5+ long
+					- Must be longest
+					- if yes, take away associated VP from previous holder (if any)
+			- Build city
+				- Must replace prexisting city
+				- Add 1 victory point
+			- Initiate trade of resources with any other player
+		-End turn
